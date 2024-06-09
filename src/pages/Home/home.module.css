@@ -1,0 +1,63 @@
+.text-orange {
+  color: var(--orange);
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.goal {
+  padding: 1rem 1.5rem;
+  background: var(--white);
+  display: flex;
+  border-radius: 12px;
+  border: 2px solid var(--purple);
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.lessons-container {
+  margin-top: 2rem;
+}
+
+.lessons-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.lesson-item {
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.lesson-icon {
+  background: var(--white);
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-icon img {
+  width: 100%;
+  transform: rotate(15deg); /* Because the assessment's screenshot is slanted*/
+  display: block;
+}
+
+.lesson-title {
+  margin: 0.75rem 0 0.25rem;
+}
+.lesson-duration {
+  color: var(--grey);
+  font-size: 0.75rem;
+}
