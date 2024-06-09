@@ -1,14 +1,26 @@
+.username {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.challenge {
+  color: var(--purple);
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .text-orange {
   color: var(--orange);
 }
 
-.intro {
-  margin-bottom: 2rem;
+.fire-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
 }
 
-.name {
-  font-size: 0.75rem;
-  margin-bottom: 0.5rem;
+.intro {
+  margin-bottom: 2rem;
 }
 
 .goal {
@@ -21,12 +33,7 @@
 
 .title {
   font-size: 22px;
-  margin-bottom: 0.75rem;
   font-weight: 500;
-}
-
-.lessons-container {
-  margin-top: 2rem;
 }
 
 .lessons-list {
@@ -41,14 +48,18 @@
   flex-shrink: 0;
 }
 
-.lesson-icon {
+.lesson-icon__container {
   background: var(--white);
   border-radius: 1.5rem;
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.lesson-icon img {
+.lesson-icon__container img {
   width: 100%;
   transform: rotate(15deg); /* Because the assessment's screenshot is slanted*/
   display: block;
@@ -57,7 +68,62 @@
 .lesson-title {
   margin: 0.75rem 0 0.25rem;
 }
+
 .lesson-duration {
   color: var(--grey);
   font-size: 0.75rem;
+}
+
+/* Leaderboard */
+.leaderboard-container {
+  margin-top: 2rem;
+}
+.leaderboard-item {
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.leaderboard-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.leaderboard-item .avatar {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--light-orange);
+}
+
+.leaderboard-details {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaderboard-details .name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.leaderboard-details .location {
+  font-size: 0.75rem;
+  color: var(--grey);
+}
+
+.leaderboard-details .score {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+}
+
+.leaderboard-details .arrow {
+  margin-right: 0.35rem;
 }

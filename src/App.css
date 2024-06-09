@@ -1,7 +1,31 @@
 :root {
   --light-purple: #cad1f1;
   --purple: #6473bb;
+  --light-orange: #ffd6c1;
   --orange: #ff9665;
   --grey: #c2c2c4;
   --white: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+section .section-tile {
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
 }

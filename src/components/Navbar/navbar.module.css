@@ -1,8 +1,16 @@
 .navbar {
-    position: fixed;
-    bottom: 0;
-    background: var(--white);
-    width: 100%;
-    padding: 1rem;
-    border-radius: 12px;
+  position: fixed;
+  bottom: 0;
+  background: var(--white);
+  width: 100%;
+  padding: 1rem 2.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -15px 25px #e5e8f5;
+}
+
+.navbar a {
+  display: block;
 }

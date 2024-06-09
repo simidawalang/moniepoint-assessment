@@ -17,5 +17,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(#f7f9fe, rgba(100, 114, 186, 0.1));
   height: 100vh;
+  background-attachment: fixed;
   overflow-y: scroll;
 }

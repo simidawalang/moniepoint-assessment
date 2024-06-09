@@ -1,5 +1,5 @@
 .progress-bar__container {
-    height: 5px;
+    height: 8px;
     display: flex;
     align-items: center;
     gap: 0.25rem;
