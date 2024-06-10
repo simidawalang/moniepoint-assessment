@@ -19,7 +19,7 @@ const Navbar = () => {
       <Link to="/">
         <IoHome size={30} color="#6473bb" />
       </Link>
-      <Link to="/">
+      <Link to="/stats">
         <IoStatsChartOutline size={30} color="#bfbfbf" />
       </Link>
       <Link to="/">

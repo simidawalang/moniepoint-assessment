@@ -1,3 +1,4 @@
+import { GoBook } from "react-icons/go";
 import {
   BritishFlagIcon,
   Profile1,
@@ -81,4 +82,56 @@ export const leaderBoardList = [
     location: "Ecuador",
     score: 1067,
   },
+];
+
+export const weekStatList = [
+  {
+    dayOfWeek: "Mon",
+    noOfDay: 2,
+    isDone: false,
+    isCurrent: false,
+  },
+  {
+    dayOfWeek: "Tue",
+    noOfDay: 3,
+    isDone: true,
+    isCurrent: false,
+  },
+  {
+    dayOfWeek: "Wed",
+    noOfDay: 4,
+    isDone: true,
+    isCurrent: false,
+  },
+  {
+    dayOfWeek: "Thur",
+    noOfDay: 5,
+    isDone: false,
+    isCurrent: true,
+  },
+  {
+    dayOfWeek: "Fri",
+    noOfDay: 6,
+    isDone: false,
+    isCurrent: false,
+  },
+  {
+    dayOfWeek: "Sat",
+    noOfDay: 7,
+    isDone: false,
+    isCurrent: false,
+  },
+  {
+    dayOfWeek: "Sun",
+    noOfDay: 8,
+    isDone: false,
+    isCurrent: false,
+  },
+];
+
+export const statsList = [
+  { id: 1, skill: "Reading", progress: "100%", icon: <GoBook size={20} /> },
+  { id: 2, skill: "Writing", progress: "85%", icon: <GoBook size={20} /> },
+  { id: 3, skill: "Speaking", progress: "100%", icon: <GoBook size={20} /> },
+  { id: 4, skill: "Listening", progress: "70%", icon: <GoBook size={20} /> },
 ];

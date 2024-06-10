@@ -1,0 +1,13 @@
+.score {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+}
+
+.fire-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}

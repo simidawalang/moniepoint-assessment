@@ -1,8 +1,6 @@
 import React from "react";
-import { ProgressBar } from "../../components";
+import { CircularProgressBar, ProgressBar, Score } from "../../components";
 import { leaderBoardList, lessonsList } from "../../dummy-data";
-import { FireIcon } from "../../assets";
-import { GoArrowUp } from "react-icons/go";
 import styles from "./home.module.css";
 
 const Home = () => {
@@ -20,11 +18,15 @@ const Home = () => {
           <div className={styles.score}></div>
         </div>
 
-        <div className={styles.goal}>
-          <div>Today&apos;s goal</div>
+        <div className={styles["goal-container"]}>
+          <div>
+            <p className={styles["todays-goal"]}>Today&apos;s goal</p>
+            <CircularProgressBar />
+          </div>
           <div>
             <h3 className={styles.title}>Excellent!</h3>
             <p>You&apos;re almost there. Finish the goal to achieve</p>
+            <Score value={10}/>
           </div>
         </div>
       </section>
@@ -56,15 +58,7 @@ const Home = () => {
                     <p className={styles["name"]}>{name}</p>
                     <p className={styles["location"]}>{location}</p>
                   </div>
-                  <div className={styles["score"]}>
-                    <GoArrowUp className={styles["arrow"]} size={16} color="#73a68f" strokeWidth={1} />
-                    <img
-                      className={styles["fire-icon"]}
-                      src={FireIcon}
-                      alt="score"
-                    />
-                    {score}
-                  </div>
+                  <Score value={score} hasArrow />
                 </div>
               </div>
             ))}

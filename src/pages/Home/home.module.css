@@ -13,27 +13,37 @@
   color: var(--orange);
 }
 
-.fire-icon {
-  width: 16px;
-  height: 16px;
-  object-fit: cover;
-}
-
 .intro {
   margin-bottom: 2rem;
 }
 
-.goal {
+.goal-container {
   padding: 1rem 1.5rem;
   background: var(--white);
   display: flex;
+  align-items: center;
+  gap: 1rem;
   border-radius: 12px;
   border: 2px solid var(--purple);
 }
 
-.title {
+.goal-container .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.todays-goal {
+  color: var(--purple);
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-title {
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .lessons-list {
@@ -114,14 +124,6 @@
 .leaderboard-details .location {
   font-size: 0.75rem;
   color: var(--grey);
-}
-
-.leaderboard-details .score {
-  font-weight: 500;
-  font-size: 0.75rem;
-  color: var(--orange);
-  display: flex;
-  align-items: center;
 }
 
 .leaderboard-details .arrow {
