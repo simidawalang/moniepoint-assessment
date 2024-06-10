@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./components";
 import "./App.css";
-import { Home, Stats } from "./pages";
+import { Home, PageNotFound, Stats } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/stats" element={<Stats />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
     </Router>

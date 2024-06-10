@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .month-selector .month {
@@ -22,8 +23,8 @@
 }
 
 .day-icon {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background: var(--purple);
   border-radius: 50%;
   display: flex;

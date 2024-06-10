@@ -15,7 +15,7 @@ const Home = () => {
               <span className={styles["text-orange"]}>play English? </span>
             </p>
           </div>
-          <div className={styles.score}></div>
+          <Score value={65} />
         </div>
 
         <div className={styles["goal-container"]}>
@@ -26,12 +26,12 @@ const Home = () => {
           <div>
             <h3 className={styles.title}>Excellent!</h3>
             <p>You&apos;re almost there. Finish the goal to achieve</p>
-            <Score value={10}/>
+            <Score value={10} />
           </div>
         </div>
       </section>
       <section className={styles["lessons-container"]}>
-        <h3 className={styles.title}>Your lesson</h3>
+        <h3 className={styles["section-title"]}>Your lesson</h3>
         <ul className={styles["lessons-list"]}>
           {lessonsList.map(({ id, title, icon, duration, percentage }) => (
             <li key={id} className={styles["lesson-item"]}>

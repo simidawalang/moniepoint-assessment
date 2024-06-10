@@ -15,6 +15,9 @@
 
 .intro {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .goal-container {
@@ -42,7 +45,6 @@
 
 .section-title {
   font-size: 22px;
-  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -124,8 +126,4 @@
 .leaderboard-details .location {
   font-size: 0.75rem;
   color: var(--grey);
-}
-
-.leaderboard-details .arrow {
-  margin-right: 0.35rem;
 }

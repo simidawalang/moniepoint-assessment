@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
-import { MdBarChart } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
 import {
   IoHome,
   IoHomeOutline,
@@ -14,19 +12,37 @@ import { HiOutlineUsers, HiUsers } from "react-icons/hi";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
+  const { pathname } = useLocation();
+
   return (
     <nav className={styles.navbar}>
       <Link to="/">
-        <IoHome size={30} color="#6473bb" />
+        {pathname === "/" ? (
+          <IoHome size={30} color="#6473bb" />
+        ) : (
+          <IoHomeOutline size={30} color="#6473bb" />
+        )}
       </Link>
       <Link to="/stats">
-        <IoStatsChartOutline size={30} color="#bfbfbf" />
+        {pathname === "/stats" ? (
+          <IoStatsChart size={30} color="#6473bb" />
+        ) : (
+          <IoStatsChartOutline size={30} color="#bfbfbf" />
+        )}
       </Link>
-      <Link to="/">
-        <HiOutlineUsers size={30} color="#bfbfbf" />
+      <Link to="/profile">
+        {pathname === "/profile" ? (
+          <HiUsers size={30} color="#6473bb" />
+        ) : (
+          <HiOutlineUsers size={30} color="#bfbfbf" />
+        )}
       </Link>
-      <Link to="/">
-        <IoSettingsOutline size={30} color="#bfbfbf" />
+      <Link to="/settings">
+        {pathname === "/settings" ? (
+          <IoSettings size={30} color="#6473bb" />
+        ) : (
+          <IoSettingsOutline size={30} color="#bfbfbf" />
+        )}
       </Link>
     </nav>
   );
