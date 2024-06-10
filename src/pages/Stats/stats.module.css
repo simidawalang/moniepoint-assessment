@@ -79,7 +79,7 @@
 .stat-item .progress {
   color: var(--grey);
   font-size: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .stat-item .status {

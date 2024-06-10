@@ -36,6 +36,15 @@
   margin-bottom: 0.5rem;
 }
 
+.goal-container .remark {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.goal-container .score {
+  margin-top: 0.25rem;
+}
+
 .todays-goal {
   color: var(--purple);
   font-size: 0.75rem;
@@ -43,9 +52,15 @@
   text-align: center;
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 .section-title {
   font-size: 22px;
-  margin-bottom: 1.5rem;
 }
 
 .lessons-list {

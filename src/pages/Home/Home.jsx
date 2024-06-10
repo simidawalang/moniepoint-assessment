@@ -1,4 +1,5 @@
 import React from "react";
+import { CiSquareChevRight } from "react-icons/ci";
 import { CircularProgressBar, ProgressBar, Score } from "../../components";
 import { leaderBoardList, lessonsList } from "../../dummy-data";
 import styles from "./home.module.css";
@@ -25,13 +26,18 @@ const Home = () => {
           </div>
           <div>
             <h3 className={styles.title}>Excellent!</h3>
-            <p>You&apos;re almost there. Finish the goal to achieve</p>
-            <Score value={10} />
+            <p className={styles.remark}>
+              You&apos;re almost there. <br /> Finish the goal to achieve
+            </p>
+            <Score className={styles.score} value={10} />
           </div>
         </div>
       </section>
       <section className={styles["lessons-container"]}>
-        <h3 className={styles["section-title"]}>Your lesson</h3>
+        <div className={styles["section-header"]}>
+          <h3 className={styles["section-title"]}>Your lesson</h3>
+          <CiSquareChevRight color="#6473bb" size={24} strokeWidth={0.5} />
+        </div>
         <ul className={styles["lessons-list"]}>
           {lessonsList.map(({ id, title, icon, duration, percentage }) => (
             <li key={id} className={styles["lesson-item"]}>
@@ -47,7 +53,10 @@ const Home = () => {
       </section>
 
       <section>
-        <h3 className={styles["section-title"]}>Leaderboard</h3>
+        <div className={styles["section-header"]}>
+          <h3 className={styles["section-title"]}>Leaderboard</h3>
+          <CiSquareChevRight color="#6473bb" size={24} strokeWidth={0.5} />
+        </div>
         <div className={styles["leaderboard-container"]}>
           <div className={styles["leaderboard-list"]}>
             {leaderBoardList.map(({ id, avatar, name, location, score }) => (
