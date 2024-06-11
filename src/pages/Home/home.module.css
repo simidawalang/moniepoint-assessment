@@ -26,8 +26,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-radius: 12px;
-  border: 2px solid var(--purple);
+  border-radius: 1.5rem;
+  border: 1.5px solid var(--purple);
 }
 
 .goal-container .title {
@@ -103,7 +103,7 @@
 
 /* Leaderboard */
 .leaderboard-container {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 .leaderboard-item {
   background: var(--white);

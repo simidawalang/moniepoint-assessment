@@ -3,20 +3,10 @@ import styles from "./circular-progressbar.module.css";
 
 const CircularProgressBar = () => {
   return (
-    <div class="circular">
-      <div class="inner"></div>
-      <div class="outer"></div>
-      <div class="numb">0%</div>
-      <div class="circle">
-        <div class="dot">
-          <span></span>
-        </div>
-        <div class="bar left">
-          <div class="progress"></div>
-        </div>
-        <div class="bar right">
-          <div class="progress"></div>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.progress}>
+        {/* style="--i: 70;" */}
+        <h3 className={styles.value}> 70%</h3>
       </div>
     </div>
   );

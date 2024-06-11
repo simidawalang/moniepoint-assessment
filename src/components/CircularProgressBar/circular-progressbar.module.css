@@ -1,4 +1,4 @@
-.circular {
+/* .circular {
     width: 100px;
     height: 100px;
     background: red;
@@ -15,4 +15,46 @@ left: 50%;
 transform: translate(-50%, -50%);
 background: var(--orange);
 border-radius: 50%;
+} */
+
+.progress {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--light-orange) linear-gradient(to right, transparent 50%, var(--orange) 0);
+}
+
+.progress::before {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+  background: var(--orange);
+  transform: rotate(calc(((70 - 50) * 0.01turn)));
+}
+
+.progress::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 10px;
+  background: var(--white);
+}
+
+.progress .value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  z-index: 2;
+}
+
+.progress.less::before {
+
+    background: var(--light-orange);
+    transform: rotate(calc(((70 ) * 0.01turn)));
 }
