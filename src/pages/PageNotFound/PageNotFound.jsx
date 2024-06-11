@@ -10,9 +10,9 @@ const PageNotFound = () => {
       <div>
         <h1>404</h1>
         <p>Page Not Found</p>
-        <button className={styles["back-btn"]} onClick={() => navigate(-1)}>
+        <button className={styles["back-btn"]} onClick={() => navigate("/")}>
             <IoArrowBackSharp />
-          Go back
+          Go to home
         </button>
       </div>
     </div>
