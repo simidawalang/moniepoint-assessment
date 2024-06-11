@@ -135,7 +135,7 @@ export const weekStatList = [
 
 export const statsList = [
   { id: 1, skill: "Reading", progress: "100%", icon: <GoBook size={28} /> },
-  { id: 2, skill: "Writing", progress: "85%", icon: <SlNotebook size={28} /> },
+  { id: 2, skill: "Writing", progress: "85%", icon: <><SlNotebook size={28} /> </> },
   {
     id: 3,
     skill: "Speaking",

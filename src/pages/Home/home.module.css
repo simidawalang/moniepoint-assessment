@@ -103,7 +103,7 @@
 
 /* Leaderboard */
 .leaderboard-container {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 .leaderboard-item {
   background: var(--white);
