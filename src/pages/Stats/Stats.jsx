@@ -23,7 +23,7 @@ const Stats = () => {
             >
               {isDone ? <IoMdCheckmark color="#fff" /> : noOfDay}
             </div>
-            <p>{dayOfWeek}</p>
+            <p className={isCurrent ? styles["text-orange"] : ""}>{dayOfWeek}</p>
           </div>
         ))}
       </div>

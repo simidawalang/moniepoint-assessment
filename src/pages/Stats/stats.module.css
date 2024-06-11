@@ -18,8 +18,8 @@
 }
 
 .week-stats .stat-day {
-    font-size: 0.875rem;
-    text-align: center;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .day-icon {
@@ -35,12 +35,16 @@
 }
 
 .complete-day {
-    background: var(--purple);
+  background: var(--purple);
 }
 
 .current-day {
-    background: var(--orange);
-    color: var(--white);
+  background: var(--orange);
+  color: var(--white);
+}
+
+.text-orange {
+  color: var(--orange);
 }
 
 .section-header {
