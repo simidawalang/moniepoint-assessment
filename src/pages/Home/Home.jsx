@@ -16,13 +16,13 @@ const Home = () => {
               <span className={styles["text-orange"]}>play English? </span>
             </p>
           </div>
-          <Score value={65} />
+          <Score value={65} isPill />
         </div>
 
         <div className={styles["goal-container"]}>
           <div>
             <p className={styles["todays-goal"]}>Today&apos;s goal</p>
-            <CircularProgressBar />
+            <CircularProgressBar value={70} />
           </div>
           <div>
             <h3 className={styles.title}>Excellent!</h3>

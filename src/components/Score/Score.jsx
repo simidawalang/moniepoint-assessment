@@ -3,9 +3,13 @@ import { GoArrowUp } from "react-icons/go";
 import { FireIcon } from "../../assets";
 import styles from "./score.module.css";
 
-const Score = ({ className, value, hasArrow }) => {
+const Score = ({ className, value, hasArrow, isPill }) => {
   return (
-    <div className={`${styles["score"]} ${className ? className : ""}`}>
+    <div
+      className={`${styles["score"]} ${className ? className : ""} ${
+        isPill ? styles.pill : ""
+      }`}
+    >
       {hasArrow && (
         <GoArrowUp
           className={styles["arrow"]}
@@ -14,7 +18,9 @@ const Score = ({ className, value, hasArrow }) => {
           strokeWidth={1}
         />
       )}
-      <img className={styles["fire-icon"]} src={FireIcon} alt="score" />
+      <div className={styles["icon-container"]}>
+        <img className={styles["fire-icon"]} src={FireIcon} alt="score" />
+      </div>
       {value}
     </div>
   );
