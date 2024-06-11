@@ -1,4 +1,8 @@
 import { GoBook } from "react-icons/go";
+import { HiOutlineSpeakerWave } from "react-icons/hi2";
+import { PiHeadphones } from "react-icons/pi";
+import { SlNotebook } from "react-icons/sl";
+
 import {
   BritishFlagIcon,
   Profile1,
@@ -130,8 +134,18 @@ export const weekStatList = [
 ];
 
 export const statsList = [
-  { id: 1, skill: "Reading", progress: "100%", icon: <GoBook size={20} /> },
-  { id: 2, skill: "Writing", progress: "85%", icon: <GoBook size={20} /> },
-  { id: 3, skill: "Speaking", progress: "100%", icon: <GoBook size={20} /> },
-  { id: 4, skill: "Listening", progress: "70%", icon: <GoBook size={20} /> },
+  { id: 1, skill: "Reading", progress: "100%", icon: <GoBook size={28} /> },
+  { id: 2, skill: "Writing", progress: "85%", icon: <SlNotebook size={28} /> },
+  {
+    id: 3,
+    skill: "Speaking",
+    progress: "100%",
+    icon: <HiOutlineSpeakerWave size={28} />,
+  },
+  {
+    id: 4,
+    skill: "Listening",
+    progress: "70%",
+    icon: <PiHeadphones size={28} />,
+  },
 ];

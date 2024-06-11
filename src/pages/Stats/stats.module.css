@@ -63,7 +63,7 @@
 .stat-item {
   background: var(--white);
   border-radius: 1.5rem;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@
 }
 
 .stat-item .status {
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 1rem;
   border-radius: 1rem;
   border: 1px solid var(--orange);
   font-size: 0.875rem;
