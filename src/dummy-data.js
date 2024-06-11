@@ -57,7 +57,7 @@ export const leaderBoardList = [
   {
     id: 1,
     avatar: Profile1,
-    name: "Yasmin Lee",
+    name: "Yasmine Lee",
     location: "Taiwan",
     score: 1230,
   },
